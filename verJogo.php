@@ -9,12 +9,13 @@
     <title>Visualizar jogo</title>
 </head>
 <body>
+    <h1>Visualizar Jogos</h1>
     <?php
         $listajogo = mostrarUsuario();
         while($jogo = mysqli_fetch_assoc($listajogo)){
-            echo "<p>". $jogo['nome'] . "</p>"; 
-            echo "<p>". $jogo['preco'] . "</p>";
-            echo "<p>". $jogo['preco_promo'] . "</p>" . "</br>";  
+            echo "<p> Nome: ". $jogo['nome'] . "</p>"; 
+            echo "<p> Preço Original: ". $jogo['preco'] . "</p>";
+            echo "<p> Preço em Promoção: ". $jogo['preco_promo'] . "</p>" . "</br>";  
         }
     ?>
 </body>
