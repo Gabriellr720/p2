@@ -11,10 +11,10 @@
         mysqli_query($conexao, $consulta); 
     }
 
-    /*function mostrarUsuario(){
+    function mostrarUsuario(){
         $conexao = conectarBD();
         $consulta = "SELECT * FROM jogo";
-        $listajogo = mysqli_query($consulta, $conexao); 
-        return listajogo; 
-    }*/
+        $listajogo = mysqli_query($conexao, $consulta); 
+        return $listajogo; 
+    }
 ?>
